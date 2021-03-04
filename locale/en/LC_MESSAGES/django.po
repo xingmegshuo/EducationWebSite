@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-20 09:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: video/models.py:11
+msgid "手机号"
+msgstr ""
+
+#: video/models.py:12
+msgid "密码"
+msgstr ""
+
+#: video/models.py:13
+msgid "用户名"
+msgstr ""
+
+#: video/models.py:14
+msgid "用户身份"
+msgstr ""
+
+#: video/models.py:17
+msgid "用户管理"
+msgstr ""
+
+#: video/models.py:22
+msgid "视频"
+msgstr ""
+
+#: video/models.py:23
+msgid "视频封面"
+msgstr ""
+
+#: video/models.py:24
+msgid "视频介绍"
+msgstr ""
+
+#: video/models.py:25 video/models.py:35
+msgid "是否展示"
+msgstr ""
+
+#: video/models.py:28
+msgid "视频管理"
+msgstr ""
+
+#: video/models.py:33
+msgid "图片"
+msgstr ""
+
+#: video/models.py:34
+msgid "图片介绍"
+msgstr ""
+
+#: video/models.py:38
+msgid "展示介绍"
+msgstr ""
+
+#: video/templates/video/base.html:38 video/templates/video/palyVido.html:27
+msgid "语言切换"
+msgstr "Language switching"
+
+#: video/templates/video/base.html:43 video/templates/video/palyVido.html:32
+msgid "中文"
+msgstr "Chinese"
+
+#: video/templates/video/base.html:45 video/templates/video/palyVido.html:34
+msgid "英语"
+msgstr "English"
+
+#: video/templates/video/base.html:52 video/templates/video/base.html:93
+#: video/templates/video/base.html:103 video/templates/video/palyVido.html:41
+#: video/templates/video/palyVido.html:58
+#: video/templates/video/palyVido.html:68
+msgid "登录"
+msgstr "Login"
+
+#: video/templates/video/base.html:65 video/templates/video/home.html:7
+msgid "展示"
+msgstr "Show"
+
+#: video/templates/video/base.html:66 video/templates/video/home.html:14
+msgid "课程"
+msgstr "Course"
+
+#: video/templates/video/base.html:67 video/templates/video/base.html:76
+msgid "下载"
+msgstr "Download"
+
+#: video/templates/video/base.html:80
+msgid "课程直播软件下载"
+msgstr "Course live software download"
+
+#: video/templates/video/base.html:81 video/templates/video/base.html:86
+msgid "下载地址"
+msgstr "Download the address"
+
+#: video/templates/video/base.html:85
+msgid "中文学习训练小游戏下载"
+msgstr "Chinese to learn to train games to download"
+
+#: video/templates/video/base.html:99 video/templates/video/palyVido.html:64
+msgid "请输入账号"
+msgstr "Please enter your account number"
+
+#: video/templates/video/base.html:101 video/templates/video/palyVido.html:66
+msgid "请输入密码"
+msgstr "Please enter your password"
+
+#~ msgid "介绍"
+#~ msgstr "Introduced"

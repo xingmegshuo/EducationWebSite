@@ -1,0 +1,26 @@
+{% extends "mobile/base.html" %}
+{% load i18n %}
+
+{% block title %}首页{% endblock %}
+
+{% block content %}
+    <h3 style="text-align:center;margin:20px 0;width:100%" id="show">{% trans "展示" %}</h3>
+    {% for d in desc %}
+        <div style="width:90%;margin: auto">
+            <div style="width:100%"><img src="{{ d.pic.url }}" style="width:100%;-webkit-user-drag: none;"></div>
+            <p style="text-indent: 2em;margin:20px 0;font-size:20px">{{ d.desc }}</p>
+        </div>
+    {% endfor %}
+    <h3 style="text-align:center;margin:20px 0;width:100%" id="cour">{% trans "课程" %}</h3>
+
+    <div style="width:90%;background-color:#eee;padding:20px 0;margin: auto;">
+        {% for v in video %}
+            <div style="width:80%;padding:20px 1%;margin:auto;">
+                <div style="font-size:14px;text-align:center;background-color:white;border-top-left-radius:10px;border-top-right-radius:10px">{{ v.video_desc }}</div>
+                <div style="width:100%;"><a href="m{{ v.id }}">
+                    <img src="{{ v.video_pic.url }}" style="width:100%;border-bottom-right-radius:10px;border-bottom-left-radius:10px "></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
