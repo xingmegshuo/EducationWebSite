@@ -17,6 +17,9 @@ class User(models.Model):
         verbose_name = _("用户管理")
         verbose_name_plural = verbose_name
 
+    def __str__(self):
+        return self.name
+
 
 class Video(models.Model):
     video = models.FileField(verbose_name=_("视频"), help_text=_("视频"), upload_to="video")
@@ -28,6 +31,9 @@ class Video(models.Model):
         verbose_name = _("视频管理")
         verbose_name_plural = verbose_name
 
+    def __str__(self):
+        return self.video_desc
+
 
 class Desc(models.Model):
     pic = models.ImageField(verbose_name=_("图片"), help_text=_("图片"), upload_to='pic')
@@ -37,3 +43,6 @@ class Desc(models.Model):
     class Meta:
         verbose_name = _("展示介绍")
         verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.desc
