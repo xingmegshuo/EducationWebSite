@@ -46,15 +46,20 @@ def video(request, id):
     v = Video.objects.get(id=id)
     if 'name' in request.COOKIES:
         name = request.COOKIES['name']
-        return render(request, 'video/palyVido.html', {'video': v,'name':name})
+        return render(request, 'video/palyVido.html', {'video': v, 'name': name})
     else:
         return render(request, 'video/palyVido.html', {'video': v})
 
 
-def mobile_video(request,id):
+def mobile_video(request, id):
     v = Video.objects.get(id=id)
     if 'name' in request.COOKIES:
         name = request.COOKIES['name']
-        return render(request, 'mobile/palyVido.html', {'video': v,'name':name})
+        return render(request, 'mobile/palyVido.html', {'video': v, 'name': name})
     else:
         return render(request, 'mobile/palyVido.html', {'video': v})
+
+
+# 直播
+def live_video(request):
+    return render(request, 'video/zhibo.html')

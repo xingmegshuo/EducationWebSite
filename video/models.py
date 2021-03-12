@@ -4,6 +4,7 @@ from django.utils.translation import gettext_lazy as _
 from django.conf import settings
 import hashlib
 
+
 # Create your models here.
 
 
@@ -46,3 +47,17 @@ class Desc(models.Model):
 
     def __str__(self):
         return self.desc
+
+
+class Live(models.Model):
+    push_url = models.CharField(max_length=1000, verbose_name=_("推流地址"), help_text=_("推流地址"))
+    pull_url = models.CharField(max_length=1000, verbose_name=_("拉流地址"), help_text=_("拉流地址"))
+    push_img = models.ImageField(verbose_name=_("推流二维码"), help_text=_("推流二维码"), upload_to='pic')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("主播"), help_text=_("主播"))
+
+    class Meta:
+        verbose_name = _("直播配置")
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.user.name
